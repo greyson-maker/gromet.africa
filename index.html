@@ -46,7 +46,7 @@ header p {
     justify-content: center;
     padding: 40px;
     background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)),
-                url('truck.jpg') center/cover no-repeat;
+                url('truck.jpeg') center/cover no-repeat;
     animation: fadeIn 1.5s ease-in;
 }
 
@@ -207,22 +207,3 @@ footer {
 <footer>
     © 2026 GROMET Africa Investments
 </footer>
-
-<script>
-const sections = document.querySelectorAll('.section');
-
-window.addEventListener('scroll', () => {
-    const triggerBottom = window.innerHeight * 0.85;
-
-    sections.forEach(section => {
-        const boxTop = section.getBoundingClientRect().top;
-
-        if(boxTop < triggerBottom) {
-            section.classList.add('visible');
-        }
-    });
-});
-</script>
-
-</body>
-</html>
